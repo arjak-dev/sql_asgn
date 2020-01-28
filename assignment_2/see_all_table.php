@@ -48,7 +48,8 @@ function table_display($sql){
                 }
                 echo "</tr>";
             }    
-        }echo "</table>";
+        }
+        echo "</table>";
         $result ->free();
         $connection -> close();
     }else{

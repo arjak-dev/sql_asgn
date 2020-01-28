@@ -4,31 +4,36 @@
         <title>Data input</title>
     </head>
     <body>
-        <form action="" method="POST" id= "form_call">
+        <form action="code.php" method="POST" id="form_call">
             <table>
                 <tr>
                     <td>Employee First name:</td>
                     <td><input type="text" name="emp_name" id="emp_first_name"required/></td>
+                    <td><label id="emp_first_name_error"></label></td>
                 </tr>
                 <tr>
                     <td>Employee last name:</td>
                     <td><input type="text" name="emp_last_name" id="emp_last_name" required></td>
+                    <td><label id="emp_last_name_error"></label></td>
                 </tr>
                 <tr>
                     <td>Employee code Name:</td>
-                    <td><input type="text" name="emp_code_name" required/></td>
+                    <td><input type="text" name="emp_code_name" id="emp_code_name" required/></td>
+                    <td><label id = "emp_code_name_error"></label></td>
                 </tr>
                 <tr>
                     <td>Employee salary:</td>
-                    <td><input type="number" name="emp_salary"required/></td>
+                    <td><input type="number" name="emp_salary" id="emp_salary" required/></td>
+                    <td><label id="emp_salary_error"></label></td>
                 </tr>
                 <tr>
                     <td>Employee percentile:</td>
-                    <td><input type="percentage" name="emp_percentage" required`/></td>
-                </tr>
+                    <td><input type="number" name="emp_percentage" required`/></td>
+                </tr> 
                 <tr>
                     <td>Employee Domain:</td>
-                    <td><input type="text" name="emp_doamin" id = "emp_doamin" required></td>
+                    <td><input type="text" name="emp_doamin" id="emp_domain" required></td>
+                    <td><label id="emp_domain_error"></label></td>
                 </tr>
             </table>
                 </br>
@@ -45,5 +50,5 @@
             <a href="query1.php?q=7"><li>query 7</li></a>
         </ul>
     </body>
-    <!-- <script src="Scripting.js" type="text/javascript"></script> -->
+    <script src="Scripting.js" type="text/javascript"></script>
 </html>
