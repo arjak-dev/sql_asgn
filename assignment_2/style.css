@@ -1,0 +1,43 @@
+body{
+    background-position: center;
+   background-image: url("galaxy-2643089_1920.jpg");
+}
+h1{
+    text-align: center;
+   color: darkgrey;
+}
+form{
+    margin: 20px auto;
+    width: 280px;
+    padding: 40px;
+    opacity: 90% ;
+}
+ul{
+    display : flex;
+    padding: 5px;
+    list-style: none;
+}
+td{
+    font-weight: bold;
+    color: #fff;
+padding: 5px;
+}
+tr{
+  
+}
+a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: springgreen;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+.submit{
+  padding: 10px;
+  background-color: springgreen;
+    border: 1px solid black;
+}
+a:hover{
+    background-color:tomato;
+}
