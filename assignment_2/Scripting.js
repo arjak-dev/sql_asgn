@@ -1,5 +1,9 @@
 document.getElementById('form_call').onsubmit = function(){
-   if(emp_first_name() && emp_last_name() && emp_domain() && emp_code_name()){
+    document.getElementById("emp_first_name_error").innerHTML = " "; 
+    document.getElementById("emp_last_name_error").innerHTML = " "; 
+    document.getElementById('emp_code_name_error').innerHTML = " ";
+    document.getElementById('emp_domain_error').innerHTML = " ";
+    if(emp_first_name() && emp_last_name() && emp_domain() && emp_code_name()){
         return true;
     }
      else{

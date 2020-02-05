@@ -23,7 +23,7 @@
         // print_r($result->fetch_assoc());
         $result -> free();
     }else 
-        "$connection ->error";
+        print_r($connection ->error);
     $connection->close();
     break;
     case 2:
