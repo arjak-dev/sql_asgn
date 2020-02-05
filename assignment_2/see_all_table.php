@@ -1,17 +1,18 @@
 <?php
 
-echo "<b>Employee code Table<b>";
+echo "<b>Employee code Table</b>";
 $sql = "select * from employee_code_table";
+// echo "$sql";
 table_display($sql);
 echo "</br>";
 
-echo "<b>Employee Salary Table<b>";
+echo "<b>Employee Salary Table</b>";
 $sql = "select * from employee_salary_table";
 table_display($sql);
 echo "</br>";
 
 
-echo "<b>Employee Details Table<b>";
+echo "<b>Employee Details Table</b>";
 $sql = "select * from employee_detail_table";
 table_display($sql);
 echo "</br>";
@@ -23,7 +24,7 @@ function table_display($sql){
     // echo "connection successful";
     echo "</br>";
     }
-
+        
     $result = $connection->query($sql);
 
     if(mysqli_num_rows($result)>0){
@@ -31,20 +32,23 @@ function table_display($sql){
             $i = 1;
         while($row = $result->fetch_assoc()){
             // print_r($row);
-            //echo "</br>";
+            // echo "</br>";
             if($i == 1){
-                echo "<tr>";
-                foreach($row as $name => $val){
-                    echo "<td>".$name."</td>";
+                $i = 2;
+               echo "<tr>";
+                 foreach($row as $name => $val){
+                    
+                    echo "<td>";
+                    echo "$name";
+                    echo "</td>";
                 }
                 echo "</tr>";
-                $i +=1;
-            }else{
+                
+            }
+            if($i==2){
                 echo "<tr>";
                 foreach($row as $name=>$val){
-
                     echo "<td>".$val."</td>";
-                    
                 }
                 echo "</tr>";
             }    

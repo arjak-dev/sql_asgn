@@ -1,43 +1,50 @@
-body{
+body {
     background-position: center;
-   background-image: url("galaxy-2643089_1920.jpg");
+    /* background-image: url("galaxy-2643089_1920.jpg"); */
 }
-h1{
+
+h1 {
     text-align: center;
-   color: darkgrey;
+    color: darkgrey;
 }
-form{
+
+form {
     margin: 20px auto;
     width: 280px;
     padding: 40px;
     opacity: 90% ;
+    border: 1px solid black;
 }
-ul{
-    display : flex;
+
+ul {
+    display: flex;
     padding: 5px;
     list-style: none;
 }
-td{
+
+td {
     font-weight: bold;
-    color: #fff;
-padding: 5px;
+    /* color: #fff; */
+    padding: 5px;
 }
-tr{
-  
-}
-a{
+
+a {
     text-decoration: none;
     color: black;
     padding: 10px;
-    background-color: springgreen;
+    background-color: rgba(0, 0, 255, 0.808);
+    border-radius: 5px;
     border: 1px solid black;
     margin-left: 5px;
 }
-.submit{
-  padding: 10px;
-  background-color: springgreen;
+
+.submit {
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.808);
+    border-radius: 5px;
     border: 1px solid black;
 }
-a:hover{
-    background-color:tomato;
+
+a:hover {
+    background-color: tomato;
 }
